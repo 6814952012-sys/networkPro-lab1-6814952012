@@ -1,0 +1,6 @@
+FROM python:3.8-slim
+
+WORKDIR /app
+COPY udp_server.py /app
+
+CMD ["python", "-u", "udp_server.py"]
